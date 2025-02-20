@@ -2,13 +2,15 @@ body {
   background: cornflowerblue;
 }
 /* ----------- For screens 768px and larger ----------- */
-@media () {
+@media (min-width: 768px) {
 	body {
-
+    background-color: palevioletred;
   }
 }
 
 /* ----------- For screens 1200px wide and larger----------- */
-@media () {
-
+@media (min-width: 1200px) {
+  body {
+    background-color: aliceblue;
+  }
 }
