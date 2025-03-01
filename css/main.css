@@ -9,6 +9,8 @@ header,
 article,
 footer {
   background: #F5C4C4;
+  display: flex;
+  justify-content: center;
   /* Add Flexbox properties to create parent flex containers and to center the content-wrapper */
 }
 
@@ -23,6 +25,8 @@ header {
 }
 
 header .content-wrapper {
+  display: flex;
+  justify-content: center;
   /* Add Flexbox properties to make the "content-wrapper" a parent flex container and to center the h1 on a mobile site */
 }
 
@@ -40,6 +44,9 @@ h2 {
 /* Main styles */
 
 article .content-wrapper {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
   /* Add Flexbox properties to center the elements and cause them to wrap so that the image is above the text. */
   background: rgba(252, 240, 240, 0.2);
   padding: 70px 0;
@@ -71,6 +78,8 @@ footer {
 }
 
 footer .content-wrapper {
+  display: flex;
+  justify-content: center;
   /* Add Flexbox properties to make the "content-wrapper" a parent flex container and to center the copyright */
 }
 
