@@ -1,59 +1,45 @@
-/* Global styles that apply to mobile, tablet, and desktop */
-body,
+/*Large Background Image*/
 html {
-  text-align: center;
-  font-family: 'Raleway', sans-serif;
-  font-size: 1em;
+  background: url(../img/pexels-marcus-aurelius-4063619.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100%;
 }
 
-section {
-  width: 50%;
-  margin: auto;
+body {
+  height: 100%;
 }
 
-h1 {
-  font-family: 'Righteous', cursive;
-  font-size: 2em;
-  color: 	#7b7d70;
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100%;
+  width: 100%;
 }
 
-h2 {
-  font-size: 1.5em;
-  color: #4eafb8;
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* This is a fallback for the translucent background for older browsers */
+  background: #222;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 10px;
+  width: 400px;
+  height: 400px;
 }
 
-p {
-  color: 	#ff8641;
+.main-paragraph {
+  width: 75%;
 }
 
-/****** TABLET ******/
-@media (min-width: 768px) {
-
-h1 {
-  color: #02cbd2;
-}
-
-h2 {
-  color: #fcc02a;
-}
-
-p {
-  color: #fcc02a;
-}
-}
-
-/****** DESKTOP ******/
-@media (min-width: 1200px) {
-
- h1 {
-  color: #6e4b61;
- } 
-
- h2 {
-  color: #cabd61;
- }
-
- p {
-  color: #c19e74;
- }
+.content p span {
+  font-family: 'Lora', sans-serif;
+  font-size: 1.5rem;
 }
