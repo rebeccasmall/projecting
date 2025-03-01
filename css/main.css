@@ -1,45 +1,96 @@
-/*Large Background Image*/
-html {
-  background: url(../img/pexels-marcus-aurelius-4063619.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 100%;
-}
-
+/* Global styles */
 body {
-  height: 100%;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* This is a fallback for the translucent background for older browsers */
-  background: #222;
-  background: rgba(0, 0, 0, 0.8);
-  color: #fff;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 1.25rem;
+  color: #524f4f;
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
-  border-radius: 10px;
-  width: 400px;
-  height: 400px;
 }
 
-.main-paragraph {
-  width: 75%;
+header,
+article,
+footer {
+  background: #F5C4C4;
+  /* Add Flexbox properties to create parent flex containers and to center the content-wrapper */
 }
 
-.content p span {
-  font-family: 'Lora', sans-serif;
-  font-size: 1.5rem;
+.content-wrapper {
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* Header styles */
+header {
+  padding: 25px 0 25px 0;
+}
+
+header .content-wrapper {
+  /* Add Flexbox properties to make the "content-wrapper" a parent flex container and to center the h1 on a mobile site */
+}
+
+h1 {
+  font-family: 'Play', sans-serif;
+  /* Font-size can be adjusted for mobile so that your name fits on a single row. */
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: 'Play', sans-serif;
+  font-size: 2rem;
+}
+
+/* Main styles */
+
+article .content-wrapper {
+  /* Add Flexbox properties to center the elements and cause them to wrap so that the image is above the text. */
+  background: rgba(252, 240, 240, 0.2);
+  padding: 70px 0;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-image-container {
+  width: 60%;
+  padding-bottom: 20px;
+}
+
+.profile-image {
+  width: 100%;
+  border-radius: 20px;
+  /* https://getcssscan.com/css-box-shadow-examples */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-description {
+  width: 80%;
+  padding-bottom: 20px;
+  border-bottom: 5px solid #F5C4C4;
+}
+
+/* Footer styles */
+footer {
+  padding: 50px 0 50px 0;
+}
+
+footer .content-wrapper {
+  /* Add Flexbox properties to make the "content-wrapper" a parent flex container and to center the copyright */
+}
+
+@media (min-width: 768px) {
+
+  header .content-wrapper {
+    /* Add Flexbox properties to move the h1 to the left at the start of the content-wrapper */
+  }
+
+  article .content-wrapper {
+    /* Add Flexbox properties so that the extra space in the content-wrapper is around the child items and align them at their centers */
+  }
+
+  .profile-image-container {
+    width: 30%;
+    padding-bottom: 0;
+  }
+
+  .profile-description {
+    width: 45%;
+  }
+
 }
