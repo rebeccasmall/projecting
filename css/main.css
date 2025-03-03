@@ -28,9 +28,9 @@ header,
 main,
 footer {
   /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the contents of each section. */
-
+  justify-content: center;
   width: 100%;
 }
 
@@ -38,11 +38,11 @@ footer {
   width: 90%;
   max-width: 1200px;
   /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to allow the flex child items to wrap. */
-
+  flex-wrap: wrap;
   /* Add a Flexbox property to center the contents of each section. */
-
+  justify-content: center;
 }
 
 main .content-wrapper {
