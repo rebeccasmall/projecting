@@ -47,9 +47,9 @@ header,
 section,
 footer {
   /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the contents of each section. */
-
+  justify-content: center;
 }
 
 .content-wrapper {
