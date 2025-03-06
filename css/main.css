@@ -56,21 +56,21 @@ footer {
   width: 90%;
   max-width: 1200px;
   /* Add a Flexbox property to make the content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  flex-flow: row wrap;
   margin: 50px 0;
 }
 
 .header-content-wrapper {
   /* Add a Flexbox property to make the header-content-wrapper a flex parent container. */
-
+  display: flex;
   /* Add a Flexbox property to center the contents of the header. */
-
+  justify-content: center;
   /* Add a Flexbox property to align the contents at their center. */
-
+  align-items: center;
   /* Add the Flexbox property flex-flow: row wrap; to allow the flex child items to wrap. */
-
+  flex-flow: row wrap;
   width: 100%;
   padding-bottom: 50px;
 }
