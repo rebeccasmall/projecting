@@ -218,7 +218,7 @@ footer {
 @media (min-width: 1200px) {
   .header-content-wrapper {
     /* Add a justify-content property and value so that any extra space if the parent container is between the h1 and "Book a Consultation link.  */
-
+    justify-content: space-between;
   }
 
   h1 {
@@ -233,9 +233,9 @@ footer {
   .services-description {
     width: 25%;
     /* Add flex-direction: column; so that the services card's child flex items are laid out in a column again. */
-
+    flex-direction: column;
     /* Add justify-content: flex-start; so the text is aligned at the top. */
-
+    justify-content: flex-start;
     margin-bottom: 0;
   }
 
